@@ -9,7 +9,7 @@ video_dir = '<PATH-TO-VIDEO-DIRECTORY>'
 ydl_queue = queue.Queue
 
 ydl_opts = {
-    'format': 'bestvideo[height<=480]+bestaudio',
+    'format': 'bestvideo[height<=480][ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
     'outtmpl': '',
     'download_archive': config_dir + '/archive',
     'restrictfilenames': True,
